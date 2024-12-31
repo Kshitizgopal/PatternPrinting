@@ -1,0 +1,48 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        
+       int num = obj.nextInt();
+       practice4(num);
+    }
+    
+    public static void practice1(int n){
+        for(int i =0;i < n;i++){
+            for(int j =0;j < n;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+    public static void practice2(int n){
+        for(int i=0;i < n;i++){
+            for(int j =0;j <= i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+    public static void practice3(int n){
+        for(int i=0;i < n;i++){
+            for(int j =0;j < n - i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+      public static void practice4(int n){
+        for(int i =1;i <= n;i++){
+            for(int j =1;j <= i;j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
